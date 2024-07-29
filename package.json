@@ -20,17 +20,18 @@
   },
   "devDependencies": {
     "@types/node": "22.0.0",
+    "@types/pg": "8.11.6",
     "@typescript-eslint/eslint-plugin": "7.17.0",
     "@vitest/coverage-v8": "2.0.4",
     "eslint": "8.57.0",
     "prettier": "3.3.3",
     "prettier-eslint": "16.3.0",
+    "prisma": "5.17.0",
     "tsup": "8.2.3",
     "tsx": "4.16.2",
     "typescript": "5.5.4",
     "vite-tsconfig-paths": "4.3.2",
-    "vitest": "2.0.4",
-    "prisma": "5.17.0"
+    "vitest": "2.0.4"
   },
   "dependencies": {
     "pg": "8.12.0",

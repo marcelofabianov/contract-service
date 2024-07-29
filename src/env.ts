@@ -3,7 +3,7 @@ import { ErrorHandle } from './error'
 
 const envSchema = z.object({
   NODE_ENV: z.string().default('development'),
-  CO_DB_URL: z.string(),
+  DATABASE_URL: z.string(),
 })
 
 const _env = envSchema.safeParse(process.env)

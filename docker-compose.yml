@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: ${CO_DB_PASSWORD:-password}
       POSTGRES_DB: ${CO_DB_DATABASE:-contract-db}
     volumes:
-      - contract-data:/var/lib/postgresql/data:rw
+      - contract-db-data:/var/lib/postgresql/data:rw
     networks:
       - contract-network
     healthcheck:
@@ -25,7 +25,7 @@ services:
       retries: 5
 
 volumes:
-  contract-db:
+  contract-db-data:
     driver: local
 
 networks:
